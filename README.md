@@ -67,18 +67,18 @@ Server runs on `http://localhost:8080`
 ## 📖 API Endpoints
 
 ### Authentication
-| Method | Endpoint       | Description              | Auth Required |
-|--------|----------------|--------------------------|---------------|
-| POST   | `/api/users/register` | Create new user     | No [file:72] |
-| POST   | `/api/users/login`    | Get JWT token        | No [file:72] |
+| Method | Endpoint              | Description              | Auth Required |
+|--------|-----------------------|--------------------------|---------------|
+| POST   | `/api/users/register` | Create new user          | No [file:72]  |
+| POST   | `/api/users/login`    | Get JWT token            | No [file:72]  |
 
 ### Products
-| Method | Endpoint            | Description                     | Auth |
-|--------|---------------------|---------------------------------|------|
-| POST   | `/api/products`     | Create product                  | ? [file:71] |
+| Method | Endpoint            | Description                                          | Auth |
+|--------|---------------------|------------------------------------------------------|------|
+| POST   | `/api/products`     | Create product                                       | ? [file:71] |
 | GET    | `/api/products`     | List products (?page=1&limit=5&category=electronics) | No |
-| PUT    | `/api/products/:id` | Update product                  | ? |
-| DELETE | `/api/products/:id` | Delete product                  | ? |
+| PUT    | `/api/products/:id` | Update product                                       | ? |
+| DELETE | `/api/products/:id` | Delete product                                       | ? |
 
 ## 🔐 Authentication Flow
 
