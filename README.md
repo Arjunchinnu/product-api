@@ -12,28 +12,36 @@ A scalable Node.js/Express backend for e-commerce applications with JWT authenti
 - **Modern ES6 Modules**: Clean import/export syntax
 
 ## 📁 Project Structure
-
-project-root/
-├── app.js 
-├── server.js ​
-├── auth.js​
-├── database/
-│ └── memory.js​
-├── controllers/
-│ ├── userController.js 
-│ └── productController.js 
-├── routes/
-│ ├── userRoutes.js ​
-│ └── productRoutes.js 
-├── middleware/
-│ ├── 404handler.js 
-│ └── errorHandler.js 
-├── utils/
-│ ├── logger.js 
-│ └── role.js 
-├── .env 
-└── package.json
-
+restaurant-api/
+├── node_modules/
+├── .env                   
+├── package.json
+├── .gitignore
+├── README.md
+├── config/               
+│   ├── appConfig.js
+│   └── dbConfig.js
+├── src/
+    ├── server.js            
+    ├── app.js                
+    ├── models/               
+    ├── middleware/           
+    │   ├── auth.js
+    │   ├── logger.js
+    │   ├── 404handler.js
+    │   └── errorHandler.js
+    ├── database/             
+    │   └── memory.js
+    ├── routes/             
+    │   ├── authRoutes.js
+    │   ├── customerRoutes.js
+    │   ├── menuRoutes.js
+    │   └── orderRoutes.js
+    └── controllers/          
+        ├── authController.js
+        ├── customerController.js
+        ├── menuController.js
+        └── orderController.js
 
 ## 🛠️ Tech Stack
 
